@@ -25,8 +25,21 @@ names.add("Jack");
 		}
 		//5. Print only the even numbered elements in the list.
 		
+		for(String name: names) {
+			if(name.length()%2 == 0) {
+			System.out.println(name);
+			}
+		}
 		//6. Print all the Strings in reverse order.
-		
+		for(int i = names.size()-1; i>=0; i--) {
+			System.out.println(names.get(i));
+		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		String seven = "e";
+		for(String name: names) {
+			if(name.contains(seven)) {
+			System.out.println(name);
+			}
+		}
 	}
 }
